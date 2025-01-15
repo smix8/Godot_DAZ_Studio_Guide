@@ -4,6 +4,9 @@
 
 This guide shows the basic workflow how to get DAZ Studio characters with morphs and Mixamo animations inside the Godot Game Engine.
 
+The guide was made for Godot3 and Blender2.8 and is no longer updated.
+At time of last updating this the general steps are still almost all the same in newer versions.
+
 - Import of fully equiped DAZ Studio Genesis 8 characters to Blender
 - Import of morphs and facial animations and small optimizations
 - Switch to Rigify for a proper animation rig
@@ -217,17 +220,14 @@ The glTF 2.0 exporter is incredible slow with meshes that have blendshapes ... s
 If you save the exported file into your Godot project the importer should already do his job and import the mesh with blendshapes, materials and animations. You can open the file ( open, not inherite ) and inspect that everything is in order. If you test the blendshapes beware that you can't properly select them all at ones to adjust the sliders.
 https://github.com/godotengine/godot/issues/35934
 
-Do yourself a favour and save the exported 3d file to a new .scn binary file or otherwise save/load times and filesize will kill you.
+Do yourself a favour and save the exported 3d file to a new .scn binary file or otherwise save/load times and filesize will be very slow.
 
 If you want seperate mesh, material and animation files you have two options. Save them manual from the open scene or create them automatically by reimporting with different importer settings, see the Godot Import documentation.
 
-If all went well you have your fully equiped, morphable and animated DAZ character inside Godot. Yee! Congratulation! That makes you one of us special Godot 3D unicorns. Much love!
+If all went well you have your fully equiped, morphable and animated DAZ character inside Godot. Yee! Congratulation!
 
-![unicorns_with_love](img/unicorns_with_love.png)
-
-Oh ... and if a mesh with blendshapes explodes in your face at some point ... that is part of Godot life.
-
-https://github.com/godotengine/godot/issues/37854
+## License
+MIT
 
 ## Common errors:
 
